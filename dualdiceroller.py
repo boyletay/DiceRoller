@@ -12,8 +12,9 @@ else:
 
 while again:
     dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
-    dice_num = randint(0, 5)
-    print(dice_imgs[dice_num])
+    die1 = randint(0, 5)
+    die2 = randint(0, 5)
+    print((dice_imgs[die1]) + ", " + (dice_imgs[die2]))
     roll_again = input("Would you like to roll again? ").lower()
     if roll_again == "yes" or roll_again == "y":
         again = True
